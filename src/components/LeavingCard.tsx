@@ -7,6 +7,8 @@ import VisitorCounter from "./VisitorCounter";
 import MatrixEffect from "./MatrixEffect";
 import { terminalSounds } from "./../utils/terminalSounds";
 import { useKonamiCode } from "./../hooks/useKonamiCode";
+import { useBSODCode } from "./../hooks/useBSODCode";
+import BSODScreen from "./BSODScreen";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 interface Signature {
@@ -23,6 +25,7 @@ const LeavingCard = () => {
 	const fullText = "Farewell, Ben... :sad_face:";
 	const { isActivated: konamiActivated, reset: resetKonami } =
 		useKonamiCode();
+	const { isActivated: bsodActivated, reset: resetBSOD } = useBSODCode();
 
 	const handleLoadingComplete = () => {
 		setIsLoading(false);
@@ -88,6 +91,7 @@ const LeavingCard = () => {
 	return (
 		<>
 			<MatrixEffect />
+			<BSODScreen isActive={bsodActivated} onClose={resetBSOD} />
 			<Dialog
 				open={konamiActivated}
 				onOpenChange={(open) => !open && resetKonami()}
@@ -245,8 +249,8 @@ const LeavingCard = () => {
 												snippet.type === "error"
 													? "text-error text-sm"
 													: snippet.type === "warning"
-														? "text-warning text-sm"
-														: "text-comment text-sm"
+													? "text-warning text-sm"
+													: "text-comment text-sm"
 											}
 										>
 											{snippet.code}
@@ -323,7 +327,7 @@ const LeavingCard = () => {
 									onClick={() => {
 										terminalSounds.playButtonClick();
 										console.log(
-											"git commit -m 'goodbye world'",
+											"git commit -m 'goodbye world'"
 										);
 									}}
 								>
@@ -335,7 +339,7 @@ const LeavingCard = () => {
 									onClick={() => {
 										terminalSounds.playWarningBeep();
 										console.log(
-											"npm uninstall human-developer",
+											"npm uninstall human-developer"
 										);
 									}}
 								>
@@ -421,6 +425,9 @@ const LeavingCard = () => {
 							<p className="text-comment text-xs">
 								P.S. - Save your Stack Overflow karma. You might
 								need it in the museum.
+							</p>
+							<p className="text-comment text-xs">
+								Konami, BSOD codes enabled for extra fun!
 							</p>
 						</div>
 
