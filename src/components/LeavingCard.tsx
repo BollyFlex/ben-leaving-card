@@ -74,13 +74,15 @@ const LeavingCard = () => {
 		{
 			name: "Radu",
 			role: "Benevolent dictator of vanilla JS",
-			message: "God damn it was great working with you Ben. Gonna miss the banter and your wit! I'm sure will find myself thinking what would Ben say about this or that. Also gonna miss your tech insights as pure as a baritone singing :P. Whishing you all the best in your next adventure my friend! 💚",
+			message:
+				"God damn it was great working with you Ben. Gonna miss the banter and your wit! I'm sure will find myself thinking what would Ben say about this or that. Also gonna miss your tech insights as pure as a baritone singing :P. Whishing you all the best in your next adventure my friend! 💚",
 			timestamp: 1763481390,
 		},
 		{
 			name: "Jon T",
 			role: "Chief Trombone Officer of pre fax age",
-			message: "Ben, you're always running here and there (here and there) / You feel you're not wanted anywhere (anywhere) / If, you ever look behind / And don't like what you find / There's something you should know - / I’m always up for a pint if you’re in town, don’t be a stranger, yea? / Cheers lad",
+			message:
+				"Ben, you're always running here and there (here and there) / You feel you're not wanted anywhere (anywhere) / If, you ever look behind / And don't like what you find / There's something you should know - / I’m always up for a pint if you’re in town, don’t be a stranger, yea? / Cheers lad",
 			timestamp: 1763481390,
 		},
 		{
@@ -100,27 +102,49 @@ const LeavingCard = () => {
 		{
 			name: "Hannah",
 			role: "Delivery wizard",
-			message: "Hey Ben, it has been so lovely getting to work alongside you in the Edinburgh office. You were so welcoming when Forecast invaded and it's been great getting to know you and hear about your theatre stuff. All the best.",
+			message:
+				"Hey Ben, it has been so lovely getting to work alongside you in the Edinburgh office. You were so welcoming when Forecast invaded and it's been great getting to know you and hear about your theatre stuff. All the best.",
 			timestamp: 1763481390,
 		},
 		{
 			name: "Yan",
 			role: "FE Dev Squad and anonymous admirer",
-			message: "Ben, I'll miss you very much, and I truly hope our paths cross again in the future. Wishing you all the best on your next adventure: may it be fun, productive, and incredibly fulfilling!",
+			message:
+				"Ben, I'll miss you very much, and I truly hope our paths cross again in the future. Wishing you all the best on your next adventure: may it be fun, productive, and incredibly fulfilling!",
 			timestamp: 1763481390,
 		},
 		{
 			name: "Francesco",
 			role: "Accidental Front-End Developer",
-			message: "It’s been a pleasure working with you, mate. Thanks for all your support over the years — wishing you all the very best in your next chapter!",
+			message:
+				"It’s been a pleasure working with you, mate. Thanks for all your support over the years — wishing you all the very best in your next chapter!",
 			timestamp: 1763481390,
 		},
 		{
 			name: "Matt Dunn",
 			role: "Resident Big Tech Lobbyist",
 			message: "Good luck Ben, you will be sorely missed!",
-			timestamp: "1156550400"
-		}
+			timestamp: 1763481390,
+		},
+		{
+			name: "Andy R",
+			role: "A no trick pony",
+			message:
+				"I cannot believe you've never had the misfortune of having to work with me. Your decency shine through. I wish you all the very best, wherever your journey takes you. Take care, Andy",
+			timestamp: 1763481390,
+		},
+		{
+			name: "Bibi",
+			role: "MK JS Guru for Trileche delivery",
+			message:
+				"The door in MK will always be open for you, " +
+				"and you are more than welcome back any time you find yourself heading" +
+				" this way. Lets keep in touch. I will drop you a message now and then." +
+				" Wishing you a well-deserved break and a brilliant new chapter ahead." +
+				" Take care, and all the best on your next adventure!" +
+				" Straight from MK to Glasgow spirit.",
+			timestamp: 1763475725003,
+		},
 	];
 
 	if (isLoading) {
