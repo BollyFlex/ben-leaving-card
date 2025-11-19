@@ -148,8 +148,16 @@ const LeavingCard = () => {
 		{
 			name: "Ruaridh",
 			role: "Occasional Edinburgh Office Frequenter",
-			message: "Been a pleasure working with you! All the best for whatever comes next!",
+			message:
+				"Been a pleasure working with you! All the best for whatever comes next!",
 			timestamp: 1763475725003,
+		},
+		{
+			name: "James H",
+			role: "Lost Soul",
+			message:
+				"Hey Ben, congrats on your imminent escape! I always enjoyed chatting with you in the web practice meetings, although we sadly never had the chance to work together on a project. Wishing you a relaxing break, and the best of luck for whatever comes next. Cheers!",
+			timestamp: 1763588066,
 		},
 	];
 
